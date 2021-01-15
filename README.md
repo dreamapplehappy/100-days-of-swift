@@ -3,7 +3,7 @@
 
 + [ ] Day 2
 
-+ [x] Day 1 – variables, simple data types, and string interpolation
++ [x] Day 1 – variables, simple data types, and string interpolation [notes](./day-01/README.md)
     + [x] 1.Variables
         + [x] Optional: Why does Swift have variables?
         + [x] Test: Variables
