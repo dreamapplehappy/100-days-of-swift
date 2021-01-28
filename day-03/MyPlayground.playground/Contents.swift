@@ -26,3 +26,48 @@ let isB1MultipleOf8 = b1.isMultiple(of: 8)
 let a2 = 1 + 1
 let b2 = "Hello, " + "World"
 let c2 = [1, 2] + [3, 4]
+
+
+// compound assignment operators
+var a3 = 10
+a3 -= 7
+a3 += 13
+a3 *= 12
+a3 /= 17
+
+// Comparison operator
+let a5 = 10
+let a6 = 12
+a5 > a6
+a5 >= a6
+a5 != a6
+"A" > "B"
+"a" < "b"
+
+//enum Size: Comparable {
+//    case small
+//    case medium
+//    case big
+//}
+//
+//print(Size.small < Size.medium)
+
+
+
+// Conditions
+let a7 = 21
+let b7 = 21
+if a7 < b7 {
+    print("Hello")
+} else if a7 == b7 {
+    print("Equal")
+} else {
+    print("Bigger")
+}
+
+// Combining conditions
+let a8 = 3
+let b8 = "a"
+
+3 > 4 && "a" <= "b"
+a8 >= 10 || b8 < "f"
