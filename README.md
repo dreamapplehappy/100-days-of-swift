@@ -26,6 +26,38 @@
     + [ ]
         + [ ]
 
++ [x] Day 3 – operators and conditions [notes](./day-03/README.md)
+    + [x] 1.Arithmetic Operators
+        + [x] Optional: Why can’t Swift add a Double to an Int?
+        + [x] Optional: Why does Swift have a dedicated division remainder operator?
+        + [x] Test: Arithmetic operators
+    + [x] 2.Operator overloading
+        + [x] Optional: Why does Swift need operator overloading?
+        + [x] Test: Operator overloading
+    + [x] 3.Compound assignment operators
+        + [x] Optional: Why does Swift have compound assignment operators?
+        + [x] Test: Compound assignment operators
+    + [x] 4.Comparison operators
+        + [x] Optional: How does Swift let us compare many types of data?
+        + [x] Test: Comparison operators
+    + [x] 5.Conditions
+        + [x] Optional: What’s the difference between if and else if?
+        + [x] Test: Conditions
+    + [x] 6.Combining conditions
+        + [x] Optional: How to check multiple conditions
+        + [x] Test: Combining conditions
+    + [x] 7.The ternary operator
+        + [x] Optional: When should you use the ternary operator in Swift?
+        + [x] Test: The ternary operator
+    + [x] 8.Switch statements
+        + [x] Optional: When should you use switch statements rather than if?
+        + [x] Test: Switch statements
+    + [x] 9.Range operators
+        + [x] Optional: Why does Swift have two range operators?
+        + [x] Test: Range operators
+    + [x] 10.Operators and conditions summary
+        + [x] Test: Operators and conditions
+
 + [ ] Day 2 arrays, dictionaries, sets, and enums [notes](./day-02/README.md)
     + [x] 1.Arrays
         + [x] Optional: Why does Swift have arrays?

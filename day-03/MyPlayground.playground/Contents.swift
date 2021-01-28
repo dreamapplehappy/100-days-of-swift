@@ -20,7 +20,7 @@ var a1: Double = 90000000000000001
 
 
 let b1 = 376
-let isB1MultipleOf8 = b1.isMultiple(of: 8)
+//let isB1MultipleOf8 = b1.isMultiple(of: 8)
 
 
 let a2 = 1 + 1
@@ -71,3 +71,47 @@ let b8 = "a"
 
 3 > 4 && "a" <= "b"
 a8 >= 10 || b8 < "f"
+
+// The ternary operator
+let firstCard = 10
+let secondCard = 20
+print(firstCard == secondCard ? "the same" : "not the same")
+
+if firstCard == secondCard {
+    print("the same")
+} else {
+    print("not the same")
+}
+
+// Switch statements
+let weather = "rain"
+switch weather {
+case "rain":
+    print("Bring an umbrella")
+    fallthrough
+case "snow":
+    print("Wrap up warm")
+case "sunny":
+    print("Wear sunscreen")
+default:
+    print("Enjoy your day!")
+}
+
+// Range operator
+let score = 99
+switch score {
+case 0..<60:
+    print("not good")
+case 60...80:
+    print("well done")
+default:
+    print("excellent")
+}
+
+print(0..<60)
+
+let fruits = ["apple", "banana", "pear", "lemon"]
+print(fruits[0])
+print(fruits[...])
+print(fruits[1...])
+print(fruits[1..<3])
