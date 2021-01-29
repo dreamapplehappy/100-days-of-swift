@@ -25,6 +25,31 @@
         + [ ]
     + [ ]
         + [ ]
+        
++ [x] Day 4 – loops, loops, and more loops [notes](./day-03/README.md)
+    + [x] 1.For loops
+        + [x] Optional: Why does Swift use underscores with loops?
+        + [x] Test: For loops
+    + [x] 2.While loops
+        + [x] Optional: When should you use a while loop?
+        + [x] Test: While loops
+    + [x] 3.Repeat loops
+        + [x] Optional: When should you use a repeat loop?
+        + [x] Test: Repeat loops
+    + [x] 4.Exiting loops
+        + [x] Optional: Why would you want to exit a loop?
+        + [x] Test: Exiting loops
+    + [x] 5.Exiting multiple loops
+        + [x] Optional: Why does Swift have labeled statements?
+        + [x] Test: Exiting multiple loops
+    + [x] 6.Skipping items
+        + [x] Optional: When to use break and when to use continue
+        + [x] Test: Skipping items
+    + [x] 7.Infinite loops
+        + [x] Optional: Why would you want to make an infinite loop?
+        + [x] Test: Infinite loops
+    + [x] 8.Looping summary
+        + [x] Test: Looping
 
 + [x] Day 3 – operators and conditions [notes](./day-03/README.md)
     + [x] 1.Arithmetic Operators
