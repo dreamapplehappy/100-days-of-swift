@@ -7,3 +7,4 @@
 + [ ] [Ranges in Swift explained with code examples](https://www.avanderlee.com/swift/ranges-explained/)
 + [ ] [Swift Code Formatters](https://nshipster.com/swift-format/)
 + [ ] [Swift 代码格式化(译)](https://juejin.cn/post/6844903838042816525)
++ [ ] [Working with throwing functions in Swift](https://www.donnywals.com/working-with-throwing-functions-in-swift/)
