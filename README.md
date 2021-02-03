@@ -26,7 +26,24 @@
     + [ ]
         + [ ]
         
-+ [x] Day 5 – Functions [notes](./day-05/README.md)        
++ [x] Day 6 – Closures, part one [notes](./day-06/README.md)   
+    + [x] 1.Creating basic closures
+        + [x] Optional: What the heck are closures and why does Swift love them so much?
+        + [x] Test: Creating basic closures
+    + [x] 2.Accepting parameters in a closure
+        + [x] Optional: Why are Swift’s closure parameters inside the braces?
+        + [x] Test: Accepting parameters in a closure
+    + [x] 3.Returning values from a closure
+        + [x] Optional: How do you return a value from a closure that takes no parameters?
+        + [x] Test: Returning values from a closure
+    + [x] 4.Closures as parameters
+        + [x] Optional: Why would you want to use closures as parameters?
+        + [x] Test: Closures as parameters
+    + [x] 5.Trailing closure syntax
+        + [x] Optional: Why does Swift have trailing closure syntax?
+        + [x] Test: Trailing closure syntax
+        
++ [x] Day 5 – Functions [notes](./day-05/README.md)
     + [x] 1.Writing functions
         + [x] Optional: What code should be put in a function?
         + [x] Test: Writing functions
