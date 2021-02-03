@@ -26,7 +26,42 @@
     + [ ]
         + [ ]
         
-+ [x] Day 4 – loops, loops, and more loops [notes](./day-03/README.md)
++ [x] Day 5 – Functions [notes](./day-05/README.md)        
+    + [x] 1.Writing functions
+        + [x] Optional: What code should be put in a function?
+        + [x] Test: Writing functions
+    + [x] 2.Accepting parameters
+        + [x] Optional: How many parameters should a function accept?
+        + [x] Test: Accepting parameters
+    + [x] 3.Returning values
+        + [x] Optional: When is the return keyword not needed in a Swift function?
+        + [x] Optional: How can you return two or more values from a function?
+        + [x] Test: Returning values
+    + [x] 4.Parameter labels
+        + [x] Optional: Why does Swift use parameter labels?
+        + [x] Test: Parameter labels
+    + [x] 5.Omitting parameter labels
+        + [x] Optional: When should you omit a parameter label?
+        + [x] Test: Omitting parameter labels
+    + [x] 6.Default parameters
+        + [x] Optional: When to use default parameters for functions
+        + [x] Test: Default parameters
+    + [x] 7.Variadic functions
+        + [x] Optional: When to use variadic functions
+        + [x] Test: Variadic functions
+    + [x] 8.Writing throwing functions
+        + [x] Optional: When should you write throwing functions?
+        + [x] Test: Writing throwing functions
+    + [x] 9.Running throwing functions
+        + [x] Optional: Why does Swift make us use try before every throwing function?
+        + [x] Test: Running throwing functions
+    + [x] 10.inout parameters
+        + [x] Optional: When should you use inout parameters?
+        + [x] Test: inout parameters
+    + [x] 11.Functions summary
+        + [x] Test: Test
+        
++ [x] Day 4 – loops, loops, and more loops [notes](./day-04/README.md)
     + [x] 1.For loops
         + [x] Optional: Why does Swift use underscores with loops?
         + [x] Test: For loops

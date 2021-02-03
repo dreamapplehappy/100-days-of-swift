@@ -103,4 +103,18 @@ func checkPwd(_ password: String) throws -> Bool {
     }
     return true
 }
-checkPwd("password0")
+
+do {
+    try checkPwd("password")
+    print("good password")
+} catch {
+    print("bad password")
+}
+
+func doubleYourNum(num: inout Int) {
+    num *= 2
+}
+
+var num1 = 10
+doubleYourNum(num: &num1)
+print(num1)
