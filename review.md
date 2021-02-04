@@ -8,3 +8,5 @@
 + [ ] [Swift Code Formatters](https://nshipster.com/swift-format/)
 + [ ] [Swift 代码格式化(译)](https://juejin.cn/post/6844903838042816525)
 + [ ] [Working with throwing functions in Swift](https://www.donnywals.com/working-with-throwing-functions-in-swift/)
++ [ ] [closure syntax](https://www.hackingwithswift.com/quick-start/understanding-swift/returning-closures-from-functions)
++ [ ] [Closures Capture Semantics: Catch them all!](https://alisoftware.github.io/swift/closures/2016/07/25/closure-capture-1/)
