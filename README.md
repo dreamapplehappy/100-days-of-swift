@@ -1,30 +1,52 @@
 
 ## Days 1-12: Introduction to Swift
 
-+ [ ] Day --
-    + [ ]
-        + [ ]
-        + [ ]
-    + [ ]
-        + [ ]
-        + [ ]
-    + [ ]
-        + [ ]
-        + [ ]
-    + [ ]
-        + [ ]
-        + [ ]
-    + [ ]
-        + [ ]
-        + [ ]
-    + [ ]
-        + [ ]
-        + [ ]
-    + [ ]
-        + [ ]
-        + [ ]
-    + [ ]
-        + [ ]
+     
++ [x] Day 8 - Structs, part one [notes](./day-08/README.md)
+    + [x] 1.Creating your own structs
+        + [x] Optional: What’s the difference between a struct and a tuple?
+        + [x] Test: Creating your own structs
+    + [x] 2.Computed properties
+        + [x] Optional: When should you use a computed property or a stored property?
+        + [x] Test: Computed properties
+    + [x] 3.Property observers
+        + [x] Optional: When should you use property observers?
+        + [x] Optional: When should you use willSet rather than didSet?
+        + [x] Test: Property observers
+    + [x] 4.Methods
+        + [x] Optional: What’s the difference between a function and a method?
+        + [x] Test: Methods
+    + [x] 5.Mutating methods
+        + [x] Optional: Why do we need to mark some methods as mutating?
+        + [x] Test: Mutating methods
+    + [x] 6.Properties and methods of strings
+        + [x] Optional: Why are strings structs in Swift?
+        + [x] Test: Properties and methods of strings
+    + [x] 7.Properties and methods of arrays
+        + [x] Optional: Why do strings behave differently from arrays in Swift?
+        + [x] Test: Properties and methods of arrays
+          
++ [x] Day 7 - Closures, part two [notes](./day-07/README.md)
+    + [x] 1.Using closures as parameters when they accept parameters
+        + [x] Optional: When would closures with parameters be used as parameters?
+        + [x] Test: Using closures as parameters when they accept parameters
+    + [x] 2.Using closures as parameters when they return values
+        + [x] Optional: When would you use closures with return values as parameters to a function?
+        + [x] Test: Using closures as parameters when they return values
+    + [x] 3.Shorthand parameter names
+        + [x] Optional: When should you use shorthand parameter names?
+        + [x] Test: Shorthand parameter names
+    + [x] 4.Closures with multiple parameters
+        + [x] Optional: How many parameters can a closure take?
+        + [x] Test: Closures with multiple parameters
+    + [x] 5.Returning closures from functions
+        + [x] Optional: Returning closures from functions
+        + [x] Test: Returning closures from functions
+    + [x] 6.Capturing values
+        + [x] Optional: Why do Swift’s closures capture values?
+        + [x] Test: Capturing values
+    + [x] 7.Closures summary
+        + [x] Test: Closures
         
 + [x] Day 6 – Closures, part one [notes](./day-06/README.md)   
     + [x] 1.Creating basic closures
