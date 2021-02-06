@@ -1,8 +1,27 @@
 
 ## Days 1-12: Introduction to Swift
 
+
++ [x] Day 9 - access control, static properties, and laziness [notes](./day-09/README.md)
+    + [x] 1.Initializers
+        + [x] Optional: How do Swift’s memberwise initializers work?
+        + [x] Test: Initializers
+    + [x] 2.Referring to the current instance
+        + [x] Optional: When would you use self in a method?
+        + [x] Test: Referring to the current instance
+    + [x] 3.Lazy properties
+        + [x] Optional: When should properties be lazy?
+        + [x] Test: Lazy properties
+    + [x] 4.Static properties and methods
+        + [x] Optional: What’s the point of static properties and methods in Swift?
+        + [x] Test: Static properties and methods
+    + [x] 5.Access control
+        + [x] Optional: What’s the point of access control?
+        + [x] Test: Access control
+    + [x] 6.Structs summary
+        + [x] Test: Structs
      
-+ [x] Day 8 - Structs, part one [notes](./day-08/README.md)
++ [x] Day 8 - structs, properties, and method [notes](./day-08/README.md)
     + [x] 1.Creating your own structs
         + [x] Optional: What’s the difference between a struct and a tuple?
         + [x] Test: Creating your own structs
