@@ -12,3 +12,4 @@
 + [ ] [Closures Capture Semantics: Catch them all!](https://alisoftware.github.io/swift/closures/2016/07/25/closure-capture-1/)
 + [ ] [Swift Lazy Property Initialization](https://useyourloaf.com/blog/swift-lazy-property-initialization/)
 + [ ] [Access Control](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html)
++ [ ] [Structs and mutation in Swift](https://chris.eidhof.nl/post/structs-and-mutation-in-swift/)

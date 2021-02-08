@@ -1,6 +1,30 @@
 
 ## Days 1-12: Introduction to Swift
 
++ [x] Day 10 - classes and inheritance [notes](./day-10/README.md)
+    + [x] 1.Creating your own classes
+        + [x] Optional: Why does Swift have both classes and structs?
+        + [x] Test: Creating your own classes
+    + [x] 2.Class inheritance
+        + [x] Optional: Why don’t Swift classes have a memberwise initializer?
+        + [x] Test: Class inheritance
+    + [x] 3.Overriding methods
+        + [x] Optional: When would you want to override a method?
+        + [x] Test: Overriding methods
+    + [x] 4.Final classes
+        + [x] Optional: Which classes should be declared as final?
+        + [x] Test: Final classes
+    + [x] 5.Copying objects
+        + [x] Optional: Why do copies of a class share their data?
+        + [x] Test: Copying objects
+    + [x] 6.Deinitializers
+        + [x] Optional: Why do classes have deinitializers and structs don’t?
+        + [x] Test: Deinitializers
+    + [x] 7.Mutability
+        + [x] Optional: Why can variable properties in constant classes be changed?
+        + [x] Test: Mutability
+    + [x] 8.Classes summary
+        + [x] Test: Classes
 
 + [x] Day 9 - access control, static properties, and laziness [notes](./day-09/README.md)
     + [x] 1.Initializers
