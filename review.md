@@ -14,3 +14,6 @@
 + [ ] [Access Control](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html)
 + [ ] [Structs and mutation in Swift](https://chris.eidhof.nl/post/structs-and-mutation-in-swift/)
 + [ ] [Protocol-Oriented Programming in Swift](https://developer.apple.com/videos/play/wwdc2015/408/)
++ [ ] [Swift: Why We Use Optionals](https://www.youtube.com/watch?v=7a7As0uNWOQ)
++ [ ] [Swift: Banning force unwrapping optionals](https://blog.timac.org/2017/0628-swift-banning-force-unwrapping-optionals/)
++ [ ] [Optional Chaining in Swift](https://andybargh.com/optional-chaining/)

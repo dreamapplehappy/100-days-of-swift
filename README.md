@@ -1,5 +1,41 @@
 
+## Days 13-15: Consolidation I
+
 ## Days 1-12: Introduction to Swift
+
++ [x] Day 12 - optionals, unwrapping, and typecasting [notes](./day-12/README.md)
+    + [x] 1.Handling missing data
+        + [x] Optional: Why does Swift have optionals?
+        + [x] Test: Handling missing data
+    + [x] 2.Unwrapping optionals
+        + [x] Optional: Why does Swift make us unwrap optionals?
+        + [x] Test: Unwrapping optionals
+    + [x] 3.Unwrapping with guard
+        + [x] Optional: When to use guard let rather than if let
+        + [x] Test: Unwrapping with guard
+    + [x] 4.Force unwrapping
+        + [x] Optional: When should you force unwrap optionals in Swift?
+        + [x] Test: Force unwrapping
+    + [x] 5.Implicitly unwrapped optionals
+        + [x] Optional: Why does Swift need both implicitly unwrapped optionals and regular optionals?
+        + [x] Test: Implicitly unwrapped optionals
+    + [x] 6.Nil coalescing
+        + [x] Optional: When should you use nil coalescing in Swift?
+        + [x] Test: Nil coalescing
+    + [x] 7.Optional chaining
+        + [x] Optional: Why is optional chaining so important?
+        + [x] Test: Optional chaining
+    + [x] 8.Optional try
+        + [x] Optional: When should you use optional try?
+        + [x] Test: Optional try
+    + [x] 9.Failable initializers
+        + [x] Optional: Why would you want a failable initializer?
+        + [x] Test: Failable initializers
+    + [x] 10.Typecasting
+        + [x] Optional: When is type casting useful in Swift?
+        + [x] Test: Typecasting
+    + [x] 11.Optionals summary
+        + [x] Test: Optionals
 
 + [x] Day 11 - protocols, extensions, and protocol extensions [notes](./day-11/README.md)
     + [x] 1.Protocols
