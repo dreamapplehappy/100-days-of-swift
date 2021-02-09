@@ -13,3 +13,4 @@
 + [ ] [Swift Lazy Property Initialization](https://useyourloaf.com/blog/swift-lazy-property-initialization/)
 + [ ] [Access Control](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html)
 + [ ] [Structs and mutation in Swift](https://chris.eidhof.nl/post/structs-and-mutation-in-swift/)
++ [ ] [Protocol-Oriented Programming in Swift](https://developer.apple.com/videos/play/wwdc2015/408/)

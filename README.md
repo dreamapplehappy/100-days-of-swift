@@ -1,6 +1,25 @@
 
 ## Days 1-12: Introduction to Swift
 
++ [x] Day 11 - protocols, extensions, and protocol extensions [notes](./day-11/README.md)
+    + [x] 1.Protocols
+        + [x] Optional: Why does Swift need protocols?
+        + [x] Test: Protocols
+    + [x] 2.Protocol inheritance
+        + [x] Optional: When should we use protocol inheritance?
+        + [x] Test: Protocol inheritance
+    + [x] 3.Extensions
+        + [x] Optional: When should you use extensions in Swift?
+        + [x] Test: Extensions
+    + [x] 4.Protocol extensions
+        + [x] Optional: When are protocol extensions useful in Swift?
+        + [x] Test: Protocol extensions
+    + [x] 5.Protocol-oriented programming
+        + [x] Optional: How is protocol-oriented programming different from object-oriented programming?
+        + [x] Test: Protocol-oriented programming
+    + [x] 6.Protocols and extensions summary
+        + [x] Test: Protocols and extensions
+
 + [x] Day 10 - classes and inheritance [notes](./day-10/README.md)
     + [x] 1.Creating your own classes
         + [x] Optional: Why does Swift have both classes and structs?
