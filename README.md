@@ -4,6 +4,12 @@
 + [x] Day 15 - Swift review, day three [notes](./day-15/README.md)
 
 + [x] Day 14 - Swift review, day two [notes](./day-14/README.md)
+    + [x] 1.Functions
+    + [x] 2.Optionals
+    + [x] 3.Optional chaining
+    + [x] 4.Enumerations
+    + [x] 5.Structs
+    + [x] 6.Classes
 
 + [x] Day 13 - Swift review, day one [notes](./day-13/README.md)
     + [x] 1.Variables and constants
