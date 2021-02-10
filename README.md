@@ -1,6 +1,21 @@
 
 ## Days 13-15: Consolidation I
 
++ [x] Day 15 - Swift review, day three [notes](./day-15/README.md)
+
++ [x] Day 14 - Swift review, day two [notes](./day-14/README.md)
+
++ [x] Day 13 - Swift review, day one [notes](./day-13/README.md)
+    + [x] 1.Variables and constants
+    + [x] 2.Types of Data
+    + [x] 3.Operators
+    + [x] 4.String interpolation
+    + [x] 5.Arrays
+    + [x] 6.Dictionaries
+    + [x] 7.Conditional statements
+    + [x] 8.Loops
+    + [x] 9.Switch case
+
 ## Days 1-12: Introduction to Swift
 
 + [x] Day 12 - optionals, unwrapping, and typecasting [notes](./day-12/README.md)
