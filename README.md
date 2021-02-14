@@ -2,6 +2,11 @@
 ## Days 13-15: Consolidation I
 
 + [x] Day 15 - Swift review, day three [notes](./day-15/README.md)
+    + [x] 1.Properties
+    + [x] 2.Static properties and methods
+    + [x] 3.Access control
+    + [x] 4.Polymorphism and typecasting
+    + [x] 5.Closures
 
 + [x] Day 14 - Swift review, day two [notes](./day-14/README.md)
     + [x] 1.Functions
