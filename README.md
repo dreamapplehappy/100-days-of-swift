@@ -2,6 +2,11 @@
 ## Day 23: Consolidation II
 
 ## Days 16-22: Starting iOS
+
++ [x] Day 18 – Project 1, part three [notes](./day-18/README.md)
+    + [x] WeSplit: Wrap up
+    + [x] Review for Project 1: WeSplit
+
 + [x] Day 17 – Project 1, part two [notes](./day-17/README.md)
     + [x] Reading text from the user with TextField
     + [x] Creating pickers in a form

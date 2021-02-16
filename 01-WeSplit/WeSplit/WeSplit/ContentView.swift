@@ -9,17 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var checkAmount = ""
-    @State private var numberOfPeople = 2
+    @State private var peopleCount = ""
+//    @State private var numberOfPeople = 2
     @State private var tipPercentage = 2
     
     let tipPercentages = [10, 15, 20, 25, 0]
     
-    var totalPerPerson: Double {
-        let peopleCount = Double(numberOfPeople + 2)
+    var totalAmount: Double {
         let tipAmountPercentage = Double(tipPercentages[tipPercentage]) / 100
         let costAmount = Double(checkAmount) ?? 0
         let totalAmount = costAmount * (1 + tipAmountPercentage)
-        return totalAmount / peopleCount
+        return totalAmount
+    }
+    
+    var totalPerPerson: Double {
+        let peopleNum = Double(peopleCount) ?? 0
+        var showAmount: Double = 0
+        if peopleNum > 0 {
+            showAmount = totalAmount / peopleNum
+        }
+        return showAmount
     }
     
     
@@ -30,11 +39,14 @@ struct ContentView: View {
                     TextField("Amount", text: $checkAmount)
                         .keyboardType(.decimalPad)
                     
-                    Picker("Number of people", selection: $numberOfPeople) {
-                        ForEach(2 ..< 99) {
-                            Text("\($0) people")
-                        }
-                    }
+                    TextField("Number of people", text: $peopleCount)
+                        .keyboardType(.numberPad)
+                    
+//                    Picker("Number of people", selection: $numberOfPeople) {
+//                        ForEach(2 ..< 99) {
+//                            Text("\($0) people")
+//                        }
+//                    }
                 }
                 
                 Section(header: Text("How much tip do you want to leave?")) {
@@ -47,9 +59,15 @@ struct ContentView: View {
                 }
                 .textCase(.none)
                 
-                Section {
+                Section(header: Text("Total amount for the check")) {
+                    Text("\(totalAmount, specifier: "%.2f")")
+                }
+                .textCase(.none)
+                
+                Section(header: Text("Amount per person")) {
                     Text("\(totalPerPerson, specifier: "%.2f")")
                 }
+                .textCase(.none)
             }
             .navigationTitle("WeSplit")
         }
