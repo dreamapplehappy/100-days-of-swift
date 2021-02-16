@@ -3,6 +3,10 @@
 
 ## Days 16-22: Starting iOS
 + [x] Day 17 – Project 1, part two [notes](./day-17/README.md)
+    + [x] Reading text from the user with TextField
+    + [x] Creating pickers in a form
+    + [x] Adding a segmented control for tip percentages
+    + [x] Calculating the total per person
 
 + [x] Day 16 - Project 1, part one [notes](./day-16/README.md)
     + [x] WeSplit: Introduction
