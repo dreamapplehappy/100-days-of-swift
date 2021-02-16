@@ -105,5 +105,16 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode
 
+# Created by https://www.toptal.com/developers/gitignore/api/swiftpackagemanager
+# Edit at https://www.toptal.com/developers/gitignore?templates=swiftpackagemanager
+
+### SwiftPackageManager ###
+Packages
+xcuserdata
+*.xcodeproj
+
+
+# End of https://www.toptal.com/developers/gitignore/api/swiftpackagemanager
+
 .idea/
 .DS_Store

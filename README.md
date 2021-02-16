@@ -1,4 +1,18 @@
 
+## Day 23: Consolidation II
+
+## Days 16-22: Starting iOS
+
+
++ [x] Day 16 - Project 1, part one [notes](./day-16/README.md)
+    + [x] WeSplit: Introduction
+    + [x] Understanding the basic structure of a SwiftUI app
+    + [x] Creating a form
+    + [x] Adding a navigation bar
+    + [x] Modifying program state
+    + [x] Binding state to user interface controls
+    + [x] Creating views in a loop
+
 ## Days 13-15: Consolidation I
 
 + [x] Day 15 - Swift review, day three [notes](./day-15/README.md)
