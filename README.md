@@ -2,6 +2,17 @@
 ## Day 23: Consolidation II
 
 ## Days 16-22: Starting iOS
+Day 22 – Project 2, part three
+
+Day 21 – Project 2, part two
+
++ [x] Day 20 – Project 2, part one [notes](./day-20/README.md)
+    + [x] Guess the Flag: Introduction
+    + [x] Using stacks to arrange views
+    + [x] Colors and frames
+    + [x] Gradients
+    + [x] Buttons and images
+    + [x] Showing alert messages
 
 + [x] Day 19 – Challenge day [notes](./day-19/README.md)
 
