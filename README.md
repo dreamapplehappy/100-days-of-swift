@@ -3,6 +3,8 @@
 
 ## Days 16-22: Starting iOS
 
++ [x] Day 19 – Challenge day [notes](./day-19/README.md)
+
 + [x] Day 18 – Project 1, part three [notes](./day-18/README.md)
     + [x] WeSplit: Wrap up
     + [x] Review for Project 1: WeSplit

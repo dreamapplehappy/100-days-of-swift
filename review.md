@@ -18,9 +18,11 @@
 + [ ] [Swift: Banning force unwrapping optionals](https://blog.timac.org/2017/0628-swift-banning-force-unwrapping-optionals/)
 + [ ] [Optional Chaining in Swift](https://andybargh.com/optional-chaining/)
 + [ ] [printf format string](https://en.wikipedia.org/wiki/Printf_format_string)
++ [ ] [How to convert units using Unit and Measurement](https://www.hackingwithswift.com/example-code/system/how-to-convert-units-using-unit-and-measurement)
 
 
 ## Questions
 + ["Can't find keyplane that supports type 8 for keyboard"?](https://developer.apple.com/forums/thread/126616)
 + [SwiftUI Section header - use non uppercase?](https://stackoverflow.com/questions/62753308/swiftui-section-header-use-non-uppercase)
 + [textCase(_:)](https://developer.apple.com/documentation/swiftui/text/textcase(_:))
++ [Swift Error: Variable used within its own initial value](https://stackoverflow.com/questions/24050599/swift-error-variable-used-within-its-own-initial-value)
