@@ -2,9 +2,13 @@
 ## Day 23: Consolidation II
 
 ## Days 16-22: Starting iOS
+
 Day 22 – Project 2, part three
 
-Day 21 – Project 2, part two
++ [x] Day 21 – Project 2, part two [notes](./day-21/README.md)
+    + [x] Stacking up buttons
+    + [x] Showing the player’s score with an alert
+    + [x] Styling our flags
 
 + [x] Day 20 – Project 2, part one [notes](./day-20/README.md)
     + [x] Guess the Flag: Introduction
