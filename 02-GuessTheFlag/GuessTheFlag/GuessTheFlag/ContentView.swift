@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var correctAnswer = Int.random(in: 0 ... 2)
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var score = 0
     
     
     var body: some View {
@@ -27,6 +28,10 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .font(.largeTitle)
                         .fontWeight(.black)
+                    Text("your current score is: \(score)")
+                        .foregroundColor(.white)
+                        .font(.subheadline)
+                        .fontWeight(.black)
                 }
                 ForEach(0 ..< 3) { number in
                     Button(action: {
@@ -39,7 +44,7 @@ struct ContentView: View {
                             .shadow(color: .gray, radius: 2, x: 1, y: 1)
                     }
                     .alert(isPresented: $showingScore) {
-                        Alert(title: Text(scoreTitle), message: Text("Your score is ???"), dismissButton: .default(Text("dismiss")) {
+                        Alert(title: Text(scoreTitle), message: Text("Your score is \(self.score), this flag is \(self.countries[number])"), dismissButton: .default(Text("dismiss")) {
                             self.askQuestion()
                         })
                     }
@@ -50,7 +55,13 @@ struct ContentView: View {
     }
     
     func buttonTapped(_ number: Int) {
-        scoreTitle = number == correctAnswer ? "Correct" : "Wrong"
+        if number == correctAnswer {
+            scoreTitle = "Correct"
+            score += 10
+        } else {
+            scoreTitle = "Wrong"
+            score -= 10
+        }
         showingScore = true
     }
     

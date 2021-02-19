@@ -1,9 +1,11 @@
 
-## Day 23: Consolidation II
+## Day 25: Consolidation II
 
-## Days 16-22: Starting iOS
+## Days 16-24: Starting SwiftUI
 
-Day 22 – Project 2, part three
++ [x] Day 22 – Project 2, part three [notes](./day-22/README.md)
+    + [x] Guess the Flag: Wrap up
+    + [x] Review for Project 2: Guess the Flag
 
 + [x] Day 21 – Project 2, part two [notes](./day-21/README.md)
     + [x] Stacking up buttons
