@@ -26,3 +26,6 @@
 + [SwiftUI Section header - use non uppercase?](https://stackoverflow.com/questions/62753308/swiftui-section-header-use-non-uppercase)
 + [textCase(_:)](https://developer.apple.com/documentation/swiftui/text/textcase(_:))
 + [Swift Error: Variable used within its own initial value](https://stackoverflow.com/questions/24050599/swift-error-variable-used-within-its-own-initial-value)
++ [What enables SwiftUI's DSL?](https://stackoverflow.com/questions/56434549/what-enables-swiftuis-dsl)
++ [Using @ViewBuilder to create Views which support multiple children](https://stackoverflow.com/questions/56532366/using-viewbuilder-to-create-views-which-support-multiple-children)
++ [What is an escaping closure?](https://www.hackingwithswift.com/example-code/language/what-is-an-escaping-closure)
