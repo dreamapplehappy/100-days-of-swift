@@ -7,6 +7,26 @@
 
 import SwiftUI
 
+extension Image {
+    func myShape() -> some View {
+        self
+            .renderingMode(.original)
+            .clipShape(Capsule())
+            .overlay(Capsule().stroke(Color.white, lineWidth: 1))
+            .shadow(color: .gray, radius: 2, x: 1, y: 1)
+    }
+}
+
+struct FlagImage: View {
+    var img: Image
+    
+    var body: some View {
+        img.myShape()
+    }
+}
+
+
+
 struct ContentView: View {
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
@@ -37,11 +57,9 @@ struct ContentView: View {
                     Button(action: {
                         self.buttonTapped(number)
                     }) {
-                        Image(self.countries[number])
-                            .renderingMode(.original)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.white, lineWidth: 1))
-                            .shadow(color: .gray, radius: 2, x: 1, y: 1)
+//                        Image(self.countries[number])
+//                            .myShape()
+                        FlagImage(img: Image(self.countries[number]))
                     }
                     .alert(isPresented: $showingScore) {
                         Alert(title: Text(scoreTitle), message: Text("Your score is \(self.score), this flag is \(self.countries[number])"), dismissButton: .default(Text("dismiss")) {

@@ -7,27 +7,6 @@
 
 import SwiftUI
 
-struct Watermark: ViewModifier {
-    var text: String
-    
-    func body(content: Content) -> some View {
-        ZStack(alignment: .bottomTrailing) {
-            content
-            Text(text)
-                .padding(5)
-                .font(.caption)
-                .padding(5)
-                .background(Color.gray)
-        }
-    }
-}
-
-extension View {
-    func watermarked(with text: String) -> some View {
-        self.body.modifier(Watermark(text: text))
-    }
-}
-
 struct MyText: View {
     var text: String
 
@@ -65,6 +44,45 @@ struct GridStack<Content: View>: View {
     }
 }
 
+struct Watermark: ViewModifier {
+    var text: String
+    
+    func body(content: Content) -> some View {
+        ZStack(alignment: .bottomTrailing) {
+            content
+            Text(text)
+                .padding(5)
+                .font(.caption)
+                .padding(5)
+                .background(Color.gray)
+        }
+    }
+}
+
+extension View {
+    func watermarked(with text: String) -> some View {
+        self.modifier(Watermark(text: text))
+    }
+}
+
+struct ProminentTitle: ViewModifier {
+//    var title: String
+    
+    func body(content: Content) -> some View {
+        VStack {
+            content
+                .font(.title)
+                .foregroundColor(.blue)
+        }
+    }
+}
+
+extension View {
+    func changeToProminentTitle() -> some View {
+        self.modifier(ProminentTitle())
+    }
+}
+
 struct ContentView: View {
 //    @State private var useRedColor = false
     
@@ -75,16 +93,24 @@ struct ContentView: View {
 //    }
     
     var body: some View {
+//        VStack {
+//            Text("Hello")
+//        }
 //        MyText(text: "Hello World")
+        Text("Hello")
 //            .watermarked(with: "hello")
-        GridStack(rows: 3, cols: 3) { row, col in
+            .changeToProminentTitle()
+//        MyText(text: "Hello World")
+//        Text("Hello")
+//            .watermarked(with: "hello")
+//        GridStack(rows: 3, cols: 3) { row, col in
 //            HStack {
-                Text("\(row * col)")
-                Image(systemName: "\(row * 3 + col).circle")
+//                Text("\(row * col)")
+//                Image(systemName: "\(row * 3 + col).circle")
 //            }
 //            Text("\(row * col)")
 //            Image(systemName: "\(row * 3 + col).circle")
-        }
+//        }
 //        Text("First")
 //            .font(.largeTitle)
 //            .padding()

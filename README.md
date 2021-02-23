@@ -3,6 +3,10 @@
 
 ## Days 16-24: Starting SwiftUI
 
++ [x] Day 24 – Project 3, part two [notes](./day-24/README.md)
+    + [x] Views and modifiers: Wrap up
+    + [x] Review for Project 3: Views and Modifiers
+
 + [x] Day 23 – Project 3, part one [notes](./day-23/README.md)
     + [x] Views and modifiers: Introduction
     + [x] Why does SwiftUI use structs for views?

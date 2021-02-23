@@ -66,6 +66,7 @@ struct ContentView: View {
                 
                 Section(header: Text("Amount per person")) {
                     Text("\(totalPerPerson, specifier: "%.2f")")
+                        .foregroundColor(self.tipPercentages[self.tipPercentage] == 0 ? .red : .blue)
                 }
                 .textCase(.none)
             }
