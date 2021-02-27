@@ -20,6 +20,7 @@
 + [ ] [printf format string](https://en.wikipedia.org/wiki/Printf_format_string)
 + [ ] [How to convert units using Unit and Measurement](https://www.hackingwithswift.com/example-code/system/how-to-convert-units-using-unit-and-measurement)
 + [ ] [Generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html)
++ [ ] [The Complete Guide to Property Wrappers in Swift 5](https://www.vadimbulavin.com/swift-5-property-wrappers/)
 
 
 ## Questions
@@ -31,3 +32,4 @@
 + [Using @ViewBuilder to create Views which support multiple children](https://stackoverflow.com/questions/56532366/using-viewbuilder-to-create-views-which-support-multiple-children)
 + [What is an escaping closure?](https://www.hackingwithswift.com/example-code/language/what-is-an-escaping-closure)
 + [Why does \.self work for ForEach?](https://www.hackingwithswift.com/books/ios-swiftui/why-does-self-work-for-foreach)
++ [What does "cannot use instance member within property initializer" mean and how can I correct it in my code?"](https://developer.apple.com/forums/thread/118026)

@@ -1,6 +1,13 @@
 
 ## Days 26-34: Expanding your skills
 
++ [x] Day 26 – Project 4, part one [notes](./day-26/README.md)
+    + [x] BetterRest: Introduction
+    + [x] Entering numbers with Stepper
+    + [x] Selecting dates and times with DatePicker
+    + [x] Working with dates
+    + [x] Training a model with Create ML
+
 ## Day 25: Consolidation II
 
 + [x] Day 25 – Milestone: Projects 1-3 [notes](./day-25/README.md)
