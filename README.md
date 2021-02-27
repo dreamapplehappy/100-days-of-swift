@@ -1,5 +1,12 @@
 
+## Days 26-34: Expanding your skills
+
 ## Day 25: Consolidation II
+
++ [x] Day 25 – Milestone: Projects 1-3 [notes](./day-25/README.md)
+    + [x] What you learned
+    + [x] Key points
+    + [x] Challenge
 
 ## Days 16-24: Starting SwiftUI
 
