@@ -21,6 +21,7 @@
 + [ ] [How to convert units using Unit and Measurement](https://www.hackingwithswift.com/example-code/system/how-to-convert-units-using-unit-and-measurement)
 + [ ] [Generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html)
 + [ ] [The Complete Guide to Property Wrappers in Swift 5](https://www.vadimbulavin.com/swift-5-property-wrappers/)
++ [ ] [Create ML for Everyone](https://www.youtube.com/watch?v=a905KIBw1hs)
 
 
 ## Questions

@@ -1,6 +1,11 @@
 
 ## Days 26-34: Expanding your skills
 
++ [x] Project 4, part two [notes](./day-27/README.md)
+    + [x] Building a basic layout
+    + [x] Connecting SwiftUI to Core ML
+    + [x] Cleaning up the user interface
+
 + [x] Day 26 – Project 4, part one [notes](./day-26/README.md)
     + [x] BetterRest: Introduction
     + [x] Entering numbers with Stepper
