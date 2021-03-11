@@ -12,6 +12,11 @@ struct ContentView: View {
     @State private var sleepAmount = 8.0
     @State private var wakeUp = defaultWakeTime
     
+    // 计算属性很强大
+    private var betterRestTime: String {
+        showSleepTime()
+    }
+    
     @State private var alertTitle = ""
     @State private var alertMsg = ""
     @State private var isAlertShow = false
@@ -26,7 +31,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                VStack(alignment: .leading, spacing: 10) {
+                Text("\(betterRestTime)")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+//                VStack(alignment: .leading, spacing: 10) {
+//                    Text("你准备几点起床？")
+//                        .font(.headline)
+//                    DatePicker("选择起床的时间", selection: $wakeUp, displayedComponents: .hourAndMinute)
+//                        .labelsHidden()
+//                        .datePickerStyle(WheelDatePickerStyle())
+//                }
+                Section(header: Text("选择起床的时间")) {
                     Text("你准备几点起床？")
                         .font(.headline)
                     DatePicker("选择起床的时间", selection: $wakeUp, displayedComponents: .hourAndMinute)
@@ -34,21 +49,42 @@ struct ContentView: View {
                         .datePickerStyle(WheelDatePickerStyle())
                 }
                 
-                VStack(alignment: .leading, spacing: 10) {
+//                VStack(alignment: .leading, spacing: 10) {
+//                    Text("你每天睡几个小时？")
+//                        .font(.headline)
+//                    Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
+//                        Text("你选择睡\(self.sleepAmount, specifier: "%g")小时")
+//                    }
+//                }
+                
+                Section(header: Text("选择每天睡觉的时间")) {
                     Text("你每天睡几个小时？")
                         .font(.headline)
                     Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
                         Text("你选择睡\(self.sleepAmount, specifier: "%g")小时")
                     }
                 }
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("你每天喝几杯咖啡？")
-                        .font(.headline)
-                    Stepper(value: $coffeeAmount, in: 1...20) {
-                        Text("你选择喝\(self.coffeeAmount)杯咖啡")
+                Section(header: Text("你选择每天喝几杯咖啡")) {
+//                    Text("你每天喝几杯咖啡？")
+//                        .font(.headline)
+//                    Stepper(value: $coffeeAmount, in: 1...20) {
+//                        Text("你选择喝\(self.coffeeAmount)杯咖啡")
+//                    }
+                    Picker("你每天喝几杯咖啡？", selection: $coffeeAmount) {
+                        ForEach(1 ..< 21) {
+                            Text("\($0)杯咖啡")
+                        }
                     }
+//                    .pickerStyle(SegmentedPickerStyle())
                 }
+                
+//                VStack(alignment: .leading, spacing: 10) {
+//                    Text("你每天喝几杯咖啡？")
+//                        .font(.headline)
+//                    Stepper(value: $coffeeAmount, in: 1...20) {
+//                        Text("你选择喝\(self.coffeeAmount)杯咖啡")
+//                    }
+//                }
             }
             .navigationTitle("更好的睡眠")
             .navigationBarItems(trailing: Button(action: self.calculateSleepTime, label: {
@@ -83,6 +119,27 @@ struct ContentView: View {
         }
         
         isAlertShow = true
+    }
+    
+    func showSleepTime() -> String {
+        let model = SleepTimeCalculator()
+        let dateCmpt = Calendar.current.dateComponents([.hour, .minute], from: wakeUp)
+        let hours = (dateCmpt.hour ?? 0) * 60 * 60
+        let minutes = (dateCmpt.minute ?? 0) * 60 * 60
+
+        do {
+            let prediction = try model.prediction(wake: Double(hours + minutes), estimatedSleep: sleepAmount, coffee: Double(coffeeAmount))
+            
+            let bedTime = wakeUp - prediction.actualSleep
+            let datefmt = DateFormatter()
+            datefmt.timeStyle = .short
+            let showBedTime = datefmt.string(from: bedTime)
+            return showBedTime
+            
+        } catch {
+            return "22:00"
+        }
+        
     }
 }
 
