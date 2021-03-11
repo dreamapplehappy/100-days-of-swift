@@ -1,7 +1,11 @@
 
 ## Days 26-34: Expanding your skills
 
-+ [x] Project 4, part two [notes](./day-27/README.md)
++ [x] Day 28 – Project 4, part three [notes](./day-28/README.md)
+    + [x] BetterRest: Wrap up
+    + [x] Review for Project 4: BetterRest
+
++ [x] Day 27 Project 4, part two [notes](./day-27/README.md)
     + [x] Building a basic layout
     + [x] Connecting SwiftUI to Core ML
     + [x] Cleaning up the user interface
