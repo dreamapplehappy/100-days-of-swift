@@ -1,6 +1,12 @@
 
 ## Days 26-34: Expanding your skills
 
++ [x] Day 29 – Project 5, part one [notes](./day-29/README.md)
+    + [x] Word Scramble: Introduction
+    + [x] Introducing List, your best friend
+    + [x] Loading resources from your app bundle
+    + [x] Working with strings
+
 + [x] Day 28 – Project 4, part three [notes](./day-28/README.md)
     + [x] BetterRest: Wrap up
     + [x] Review for Project 4: BetterRest
