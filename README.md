@@ -1,6 +1,12 @@
 
 ## Days 26-34: Expanding your skills
 
++ [x] Day 30 – Project 5, part two [notes](./day-30/README.md)
+    + [x] Adding to a list of words
+    + [x] Running code when our app launches
+    + [x] Validating words with UITextChecker
+
+
 + [x] Day 29 – Project 5, part one [notes](./day-29/README.md)
     + [x] Word Scramble: Introduction
     + [x] Introducing List, your best friend

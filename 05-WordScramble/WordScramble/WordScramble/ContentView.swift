@@ -9,51 +9,106 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var people = ["a", "b", "c"]
+    @State private var usedWords = [String]()
+    @State private var rootWord = ""
+    @State private var newWord = ""
+    
+    @State private var errTitle = ""
+    @State private var errMsg = ""
+    @State private var showErr = false
     
     var body: some View {
-//        List {
-//            Section(header: Text("Section 1")) {
-//                Text("Hello Wolrd")
-//                Text("Hello Wolrd")
-//                Text("Hello Wolrd")
-//            }
-//            Section(header: Text("Section 2")) {
-//                ForEach(0 ..< 5) {
-//                    Text("Row \($0)")
-//                }
-//            }
-//        }
-//        .listStyle(GroupedListStyle())
-//        if let fileUrl = Bundle.main.url(forResource: "start", withExtension: "txt") {
-//            if let fileContent = try? String(contentsOf: fileUrl) {
-//                print(fileContent)
-//            }
-//        }
+        NavigationView {
+            VStack {
+                TextField("输入你的答案", text: $newWord, onCommit: addNewWord)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .autocapitalization(.none)
+                
+                List(usedWords, id: \.self) {
+                    Image(systemName: "\($0.count).circle.fill")
+                    Text("\($0)")
+                }
+            }
+            .navigationTitle(rootWord)
+            .onAppear(perform: startGame)
+            .alert(isPresented: $showErr) {
+                Alert(title: Text(errTitle), message: Text(errMsg), dismissButton: .default(Text("好的")))
+            }
+        }
+    }
+    
+    func addNewWord() {
+        let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
-//        let input = """
-//                    a
-//                    b
-//                    c
-//                    """
-//        let letters = input.components(separatedBy: "\n")
-//        let letter = letters.randomElement()
-//        let trimmed = letter?.trimmingCharacters(in: .whitespacesAndNewlines)
-//        print(trimmed)
+        guard answer.count > 0 else {
+            return
+        }
         
-        let words = "swift"
+        guard isOriginal(word: answer) else {
+            showErrorAlert(title: "之前已经用过这个单词", msg: "请使用新的单词")
+            newWord = ""
+            return
+        }
+        
+        guard isPossible(word: answer) else {
+            showErrorAlert(title: "不是从给出的单词中拼出的", msg: "请使用新的单词")
+            newWord = ""
+            return
+        }
+        
+        guard isCorrect(word: answer) else {
+            showErrorAlert(title: "没有这个单词", msg: "请使用新的单词")
+            newWord = ""
+            return
+        }
+        
+        usedWords.insert(answer, at: 0)
+        newWord = ""
+    }
+    
+    func startGame() {
+        if let startFileUrl = Bundle.main.url(forResource: "start", withExtension: "txt") {
+            if let fileStr = try? String(contentsOf: startFileUrl) {
+                let allGameWords = fileStr.components(separatedBy: "\n")
+                rootWord = allGameWords.randomElement() ?? "hello"
+                return
+            }
+        }
+        
+        fatalError("加载游戏文件失败")
+    }
+    
+    // 是否重复出现
+    func isOriginal(word: String) -> Bool {
+        !usedWords.contains(word)
+    }
+    
+    // 是否能够拼写
+    func isPossible(word: String) -> Bool {
+        var tempWord = rootWord
+        for letter in word {
+            if let pos = tempWord.firstIndex(of: letter) {
+                tempWord.remove(at: pos)
+            } else {
+                return false
+            }
+        }
+        return true
+    }
+    
+    // 是否是正确的单词
+    func isCorrect(word: String) -> Bool {
         let checker = UITextChecker()
-        let range = NSRange(location: 0, length: words.utf16.count)
-        let misspelledRange = checker.rangeOfMisspelledWord(in: words, range: range, startingAt: 0, wrap: false, language: "en")
-        let allGood = misspelledRange.location == NSNotFound
-        if allGood {
-            print("OK")
-        }
-        
-        
-        return List(people, id: \.self) {
-            Text("List \($0)")
-        }
+        let range = NSRange(location: 0, length: word.utf16.count)
+        let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
+        return misspelledRange.location == NSNotFound
+    }
+    
+    func showErrorAlert(title: String, msg: String) {
+        errTitle = title
+        errMsg = msg
+        showErr = true
     }
 }
 
