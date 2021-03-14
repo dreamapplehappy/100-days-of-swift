@@ -1,6 +1,11 @@
 
 ## Days 26-34: Expanding your skills
 
++ [x] Day 31 – Project 5, part three [notes](./day-31/README.md)
+    + [x] Word Scramble: Wrap up
+    + [x] Review for Project 5: Word Scramble
+
+
 + [x] Day 30 – Project 5, part two [notes](./day-30/README.md)
     + [x] Adding to a list of words
     + [x] Running code when our app launches

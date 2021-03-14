@@ -17,6 +17,8 @@ struct ContentView: View {
     @State private var errMsg = ""
     @State private var showErr = false
     
+    @State private var score = 0
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -29,12 +31,21 @@ struct ContentView: View {
                     Image(systemName: "\($0.count).circle.fill")
                     Text("\($0)")
                 }
+                
+                // 当前用户的分数
+                Text("您当前的分数是：\(score)")
             }
             .navigationTitle(rootWord)
             .onAppear(perform: startGame)
             .alert(isPresented: $showErr) {
                 Alert(title: Text(errTitle), message: Text(errMsg), dismissButton: .default(Text("好的")))
             }
+            .navigationBarItems(trailing: Button("重新开始") {
+                self.startGame()
+                usedWords = []
+                newWord = ""
+                score = 0
+            })
         }
     }
     
@@ -64,6 +75,7 @@ struct ContentView: View {
         }
         
         usedWords.insert(answer, at: 0)
+        score += newWord.count
         newWord = ""
     }
     
@@ -87,6 +99,15 @@ struct ContentView: View {
     // 是否能够拼写
     func isPossible(word: String) -> Bool {
         var tempWord = rootWord
+        // 不能少于三个字母
+        if word.count < 3 {
+            return false
+        }
+        // 不能和给出的词一样
+        if tempWord == word {
+            return false
+        }
+        
         for letter in word {
             if let pos = tempWord.firstIndex(of: letter) {
                 tempWord.remove(at: pos)
