@@ -1,6 +1,13 @@
 
 ## Days 26-34: Expanding your skills
 
++ [x] Day 32 – Project 6, part one [notes](./day-32/README.md)
+    + [x] Animation: Introduction
+    + [x] Creating implicit animations
+    + [x] Customizing animations in SwiftUI
+    + [x] Animating bindings
+    + [x] Creating explicit animations
+
 + [x] Day 31 – Project 5, part three [notes](./day-31/README.md)
     + [x] Word Scramble: Wrap up
     + [x] Review for Project 5: Word Scramble
