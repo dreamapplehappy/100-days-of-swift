@@ -1,6 +1,13 @@
 
 ## Days 26-34: Expanding your skills
 
++ [x] Day 33 – Project 6, part two [notes](./day-33/README.md)
+    + [x] Controlling the animation stack
+    + [x] Animating gestures
+    + [x] Showing and hiding views with transitions
+    + [x] Building custom transitions using ViewModifier
+
+
 + [x] Day 32 – Project 6, part one [notes](./day-32/README.md)
     + [x] Animation: Introduction
     + [x] Creating implicit animations
