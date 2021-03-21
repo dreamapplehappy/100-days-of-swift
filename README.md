@@ -1,5 +1,15 @@
 
+## Days 36-46: Scaling up to bigger apps
+
+## Day 35: Consolidation III
+
+
 ## Days 26-34: Expanding your skills
+
++ [x] Day 34 – Project 6, part three [notes](./day-34/README.md)
+    + [x] Animation: Wrap up
+    + [x] Review for Project 6: Animation
+
 
 + [x] Day 33 – Project 6, part two [notes](./day-33/README.md)
     + [x] Controlling the animation stack

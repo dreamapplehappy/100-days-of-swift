@@ -34,6 +34,14 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0
+    @State private var degreeAmount: Double = 0
+    @State private var selectedIdx = -1
+    @State private var scaleAmount: CGFloat = 1
+    
+    
+    private var isThisRoundWon: Bool {
+        selectedIdx == correctAnswer
+    }
     
     
     var body: some View {
@@ -61,6 +69,15 @@ struct ContentView: View {
 //                            .myShape()
                         FlagImage(img: Image(self.countries[number]))
                     }
+                    .rotation3DEffect(
+                        .degrees(self.isThisRoundWon && (self.selectedIdx == number) ? 360 : 0),
+                        axis: (x: 0.0, y: 1.0, z: 0.0)
+                        )
+                    .animation(self.isThisRoundWon ? .default : nil)
+                    .opacity((self.selectedIdx != number) && self.isThisRoundWon ? 0.25 : 1)
+                    .animation(self.isThisRoundWon ? .default : nil)
+                    .scaleEffect(!isThisRoundWon && (correctAnswer == number) ? self.scaleAmount : 1)
+                    .animation(!self.isThisRoundWon ? .default : nil)
                     .alert(isPresented: $showingScore) {
                         Alert(title: Text(scoreTitle), message: Text("Your score is \(self.score), this flag is \(self.countries[number])"), dismissButton: .default(Text("dismiss")) {
                             self.askQuestion()
@@ -74,16 +91,20 @@ struct ContentView: View {
     
     func buttonTapped(_ number: Int) {
         if number == correctAnswer {
+            selectedIdx = number
             scoreTitle = "Correct"
             score += 10
         } else {
             scoreTitle = "Wrong"
             score -= 10
+            scaleAmount = 1.2
         }
         showingScore = true
     }
     
     func askQuestion() {
+        scaleAmount = 1
+        selectedIdx = -1
         countries = countries.shuffled()
         correctAnswer = Int.random(in: 0 ... 2)
     }
